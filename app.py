@@ -2,8 +2,10 @@
 '''Provide mock data for Policy Search that returns JSON'''
 
 from flask import Flask, Response, json, jsonify, request
+from flask_cors import CORS, cross_origin
 from functools import wraps
 app = Flask(__name__)
+CORS(app)
 
 mock_data =[
     {
@@ -22,14 +24,6 @@ mock_data =[
         "state": "AR"
     }
 ]
-
-
-def jsonp(data, callback="function"):
-    '''Provide a JSONP response with callback'''
-    return Response(
-        "%s(%s);" %(callback, json.dumps(data)),
-        mimetype="text/javascript"
-    )
 
 
 @app.route('/')
@@ -57,12 +51,7 @@ def echo():
 @app.route('/policy-search/api/v1.0/policies', methods=['GET', 'POST'])
 def get_policies():
     '''Return policies that meet the search criteria'''
-    if request.method == 'GET':
-        callback = request.args.get('callback')
-        if callback:
-            return jsonp(mock_data, callback)
-        else:
-            return jsonp(mock_data)
+    return jsonify(mock_data)
 
 
 if __name__ == '__main__':
