@@ -1,6 +1,9 @@
 *.sublime*
 *.tmp
 *.log
+bin/
+include/
+pip-selfcheck.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
