@@ -4,8 +4,8 @@ import os
 import app as eic_status
 import unittest
 
-class EicPolicySearch(unittest.TestCase):
 
+class EicPolicySearch(unittest.TestCase):
     def setUp(self):
         self.app = eic_status.app.test_client()
         self.version = "v1.0"
