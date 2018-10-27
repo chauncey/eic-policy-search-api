@@ -1,6 +1,6 @@
-eic-policy-search-api
-=====================
-[![Build Status](https://semaphoreci.com/api/v1/chauncey/eic-policy-search-api/branches/master/badge.svg)](https://semaphoreci.com/chauncey/eic-policy-search-api)  [![CircleCI](https://circleci.com/gh/chauncey/eic-policy-search-api.svg?style=svg)](https://circleci.com/gh/chauncey/eic-policy-search-api)
+# eic-policy-search-api
+
+[![Build Status](https://semaphoreci.com/api/v1/chauncey/eic-policy-search-api/branches/master/badge.svg)](https://semaphoreci.com/chauncey/eic-policy-search-api) [![CircleCI](https://circleci.com/gh/chauncey/eic-policy-search-api.svg?style=svg)](https://circleci.com/gh/chauncey/eic-policy-search-api)
 [![TravisCI](https://travis-ci.org/chauncey/eic-policy-search-api.svg?branch=add-travis)](https://travis-ci.org/chauncey/eic-policy-search-api.svg?branch=master)
 
 The beginnings of an api for policy searches
