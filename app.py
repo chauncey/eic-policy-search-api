@@ -99,7 +99,6 @@ def get_policies():
 def login():
     if request.method == 'POST':
         jsonbody = json.load(request.stream)
-        print jsonbody
         return jsonify([get_fakedata()])
 
 
